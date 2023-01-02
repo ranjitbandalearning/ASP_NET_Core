@@ -1,0 +1,9 @@
+﻿@model IEnumerable<AuthorDto>
+
+<div>
+    <h1>@ViewBag.WhatIsThisList</h1>
+    @foreach (var author in Model)
+    {
+       <partial name="_Author" model="author"/>
+    }
+</div>

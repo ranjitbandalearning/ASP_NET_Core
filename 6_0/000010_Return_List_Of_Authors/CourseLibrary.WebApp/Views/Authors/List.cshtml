@@ -1,0 +1,24 @@
+﻿@model IEnumerable<CourseLibrary.API.Entities.Author>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CourseLibrary Web Application</title>
+</head>
+<body>
+    <h1>@ViewBag.WhatIsThisList</h1>
+    @foreach (var author in Model)
+    {
+        <div>
+
+            <h2>First Name = @author.FirstName</h2>
+            <h3>Last Name = @author.LastName</h3>
+            <h4>Date of Birth = @author.DateOfBirth</h4>
+            <h5></h5>
+            <h6></h6>
+        </div>
+    }
+</body>
+</html>
+

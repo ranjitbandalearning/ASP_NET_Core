@@ -1,0 +1,16 @@
+﻿@model IEnumerable<AuthorDto>
+
+<div>
+    <h1>@ViewBag.WhatIsThisList</h1>
+    @foreach (var author in Model)
+    {
+        <div>
+
+            <h2>First Name = @author.Name</h2>
+            <h3>Age = @author.Age</h3>
+            <h4>Author Category = @author.MainCategory</h4>
+            <h5>Id = @author.Id</h5>
+            <h6></h6>
+        </div>
+    }
+</div>

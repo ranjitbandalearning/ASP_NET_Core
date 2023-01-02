@@ -1,0 +1,31 @@
+﻿@model AuthorDto
+
+<div>
+    <h1>Author Details Below</h1>
+    <div>
+
+        <h2>First Name = @Model.Name</h2>
+        <h3>Age = @Model.Age</h3>
+        <h4>Author Category = @Model.MainCategory</h4>
+        <h5>Id = @Model.Id</h5>
+
+
+        <h6> * * * * * * * * * * * * * * * * *</h6>
+
+
+        <h1>The below are the courses of this author</h1>
+        @foreach (var course in Model.CourseDtos)
+        {
+            <div>
+
+                <h2>Book Title = @course.Title</h2>
+                <h3>Book Description = @course.Description</h3>
+                <h4></h4>
+            </div>
+        }
+    </div>
+
+    <div>
+        <h1><a asp-controller="Authors" asp-action="List"> - - - - - - - -   CLICK HERE FOR LIST OF AUTHORS (TO GO BACK) - - - - - - - - - </a></h1>
+    </div>
+</div>

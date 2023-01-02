@@ -1,0 +1,13 @@
+﻿@model AuthorDto
+
+<div>
+
+    <h2>
+        <a asp-controller="Authors" asp-action="Details" asp-route-authorId="@Model.Id">First Name = @Model.Name</a>
+    </h2>
+    <h3>Age = @Model.Age</h3>
+    <h4>Author Category = @Model.MainCategory</h4>
+    <h5>Id = @Model.Id</h5>
+    <h6></h6>
+    <input type="button" value="Click for favourite Author" />
+</div>
