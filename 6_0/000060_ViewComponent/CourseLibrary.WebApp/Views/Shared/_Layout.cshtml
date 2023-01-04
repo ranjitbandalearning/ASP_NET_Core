@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CourseLibrary Web Application from LAYOUT PAGE</title>
+</head>
+<body>
+    <div>
+        @await Component.InvokeAsync("FavouriteAuthorSummary")
+        @*<vc:favourite-author-summary></vc:favourite-author-summary>*@
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

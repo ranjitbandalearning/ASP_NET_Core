@@ -1,0 +1,10 @@
+﻿@model IEnumerable<AuthorDto>
+
+<div>
+    <h1>@ViewBag.WhatIsThisList</h1>
+    <h2>My Favourite Authors are = @TempData["MyFavouriteAuthors"]</h2>
+    @foreach (var author in Model)
+    {
+       <partial name="_Author" model="author"/>
+    }
+</div>
