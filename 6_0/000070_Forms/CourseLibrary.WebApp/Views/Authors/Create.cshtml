@@ -1,0 +1,38 @@
+﻿@model AuthorForCreationDto
+<form action="Create" method="post" role="form">
+    <h3>
+        You are one step away from creating an author
+    </h3>
+
+    <div>
+        <div>
+             <label asp-for="FirstName"></label>
+             <input asp-for="FirstName" />
+        </div>
+        <div>
+            <label asp-for="LastName"></label>
+            <input asp-for="LastName" />
+        </div>
+        <div>
+             <label asp-for="MainCategory"></label>
+             <input asp-for="MainCategory" />
+        </div>
+    </div>
+    <div>
+        <h3>
+             * * * * * * * * * * * * * *
+        </h3>
+        <h4>
+            Course To Add
+        </h4>
+        @*<div>
+            <label asp-for="Title"></label>
+            <input asp-for="Title" />
+        </div>
+        <div>
+            <label asp-for="Description"></label>
+            <input asp-for="Description" />
+        </div>*@
+    </div>
+    <input type="submit" class="btn" value="Complete Author Creation"/>
+</form>

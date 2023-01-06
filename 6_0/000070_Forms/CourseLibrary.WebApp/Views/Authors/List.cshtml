@@ -1,0 +1,11 @@
+﻿@model IEnumerable<AuthorDto>
+
+<div>
+    <a asp-controller="Authors" asp-action="Create">CREATE AUTHOR</a>
+    <h1>@ViewBag.WhatIsThisList</h1>
+    <h2>My Favourite Authors are = @TempData["MyFavouriteAuthors"]</h2>
+    @foreach (var author in Model)
+    {
+       <partial name="_Author" model="author"/>
+    }
+</div>
